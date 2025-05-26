@@ -1,0 +1,7 @@
+backend/uploads/user/keerthiga image.jpg
+backend/uploads/user/mexant.png
+backend/uploads/user/Mohanapriya.png
+# Environment variables
+config.env
+.env
+*.env
