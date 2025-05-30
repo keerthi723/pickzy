@@ -5,7 +5,7 @@ DESCRIPTION:
 Pickzy is a full-stack e-commerce web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It allows users to browse products, add them to cart, register/login, and place orders. Admins can manage products, users, and orders.
 This project was developed to strengthen my full-stack development skills and simulate a real-world e-commerce experience.
 
-Live Site (Hosted on AWS):
+Live Site (Hosted on AWS)
 Full Website Access: http://16.171.134.216:8001
 
 FEATURES:
