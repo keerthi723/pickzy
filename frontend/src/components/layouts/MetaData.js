@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 export default function MetaData({ title }) {
   return (
     <Helmet>
-      <title>{`${title}-Prodom`}</title>
+      <title>{`${title}-Pickzy`}</title>
     </Helmet>
   );
 }
