@@ -169,9 +169,12 @@ exports.updateProfile = catchAsyncError(async (req, res, next) => {
   };
 
   let avatar;
-  let BASE_URL = process.env.BACKEND_URL;
+
+  let BASE_URL;
   if (process.env.NODE_ENV === "production") {
-    BASE_URL = `${req.protocol}://${req.get("host")}`;
+    BASE_URL = process.env.BACKEND_URL; // use duckdns
+  } else {
+    BASE_URL = `${req.protocol}://${req.get("host")}`; // use localhost in dev
   }
 
   if (req.file) {
