@@ -13,7 +13,7 @@ exports.registerUser = catchAsyncError(async (req, res, next) => {
 
   let BASE_URL = process.env.BACKEND_URL;
   if (process.env.NODE_ENV === "production") {
-    BASE_URL = `${req.protocol}://${req.get("host")}`;
+    BASE_URL = process.env.BACKEND_URL;
   }
 
   if (req.file) {
@@ -79,7 +79,7 @@ exports.forgotPassword = catchAsyncError(async (req, res, next) => {
 
   let BASE_URL = process.env.FRONTEND_URL;
   if (process.env.NODE_ENV === "production") {
-    BASE_URL = `${req.protocol}://${req.get("host")}`;
+    BASE_URL = process.env.FRONTEND_URL;
   }
 
   //Create reset url
