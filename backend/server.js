@@ -4,11 +4,17 @@ const path = require("path");
 const connectDatabase = require("./config/database");
 
 connectDatabase();
-// ADD THESE LINES FOR CORS
+// CORS Configuration for production
 app.use(
   cors({
-    origin: ["https://pickzy-frontend.onrender.com", "http://localhost:3000"],
+    origin: [
+      "https://pickzy-frontend.onrender.com",
+      "http://localhost:3000",
+      "http://127.0.0.1:3000",
+    ],
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
