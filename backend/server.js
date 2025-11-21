@@ -1,9 +1,16 @@
 const app = require("./app");
-
+const cors = require("cors");
 const path = require("path");
 const connectDatabase = require("./config/database");
 
 connectDatabase();
+// ADD THESE LINES FOR CORS
+app.use(
+  cors({
+    origin: ["https://pickzy-frontend.onrender.com", "http://localhost:3000"],
+    credentials: true,
+  })
+);
 
 const server = app.listen(process.env.PORT, () => {
   console.log(
