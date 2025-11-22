@@ -39,7 +39,7 @@ import {
   updateUserSuccess,
   updateUserFail,
 } from "../slices/userSlice";
-import axios from "axios";
+import axios from "../utils/api";
 
 export const login = (email, password) => async (dispatch) => {
   try {

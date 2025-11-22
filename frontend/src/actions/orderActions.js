@@ -18,7 +18,7 @@ import {
   userOrdersRequest,
   userOrdersSuccess,
 } from "../slices/orderSlice";
-import axios from "axios";
+import axios from "../utils/api";
 
 export const createOrder = (order) => async (dispatch) => {
   try {
