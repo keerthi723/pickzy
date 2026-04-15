@@ -6,7 +6,7 @@ Pickzy is a full-stack e-commerce web application built using the MERN stack (Mo
 This project was developed to strengthen my full-stack development skills and simulate a real-world e-commerce experience.
 
 Live Site (Hosted on AWS)
-Full Website Access: (https://pickzy.duckdns.org)
+
 
 FEATURES:
 
