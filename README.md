@@ -1,5 +1,6 @@
 TITLE:
 Pickzy - MERN Stack E-Commerce Website
+Live : https://pickzy-frontend.onrender.com
 
 DESCRIPTION:
 Pickzy is a full-stack e-commerce web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It allows users to browse products, add them to cart, register/login, and place orders. Admins can manage products, users, and orders.
