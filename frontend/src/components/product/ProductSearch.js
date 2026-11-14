@@ -144,6 +144,12 @@ export default function ProductSearch() {
                     products.map((product) => (
                       <Product col={4} key={product._id} product={product} />
                     ))}
+                  {products && products.length === 0 && (
+                    <div className="col-12 text-center mt-5">
+                      <h4>No products found</h4>
+                      <p>Try a different keyword, category or price range.</p>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
